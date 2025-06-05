@@ -51,27 +51,88 @@ public class Main {
 //            System.out.println("You are a child!");
 //        }
 
-        Random random = new Random();
-
-        boolean isHeads;
-        isHeads = random.nextBoolean();
-
-        if(isHeads){
-            System.out.println("Coin landed HEADS!");
-        }
-        else{
-            System.out.println("Coin landed TAILS!");
-        }
-
-        int gamba;
-        gamba = random.nextInt(1,21);
-
-
+//        Random random = new Random();
+//
+//        boolean isHeads;
+//        isHeads = random.nextBoolean();
+//
+//        if(isHeads){
+//            System.out.println("Coin landed HEADS!");
+//        }
+//        else{
+//            System.out.println("Coin landed TAILS!");
+//        }
+//
+//        int gamba;
+//        gamba = random.nextInt(1,21);
 
 
 
 
-        System.out.println(gamba);
+//    double result;
+//    result = Math.pow(2, 4);
+//    result = Math.min(5, 200);
+//    result = Math.max(5, 200);
+//   result = Math.sqrt(9);
+//      result = Math.ceil(2.12);
+//      result = Math.floor(59.2222);
+//        System.out.println(result);
 
+        //hypotenuse c = Math.sqrt(a² + b²)
+
+//        Scanner scanner = new Scanner(System.in);
+//
+//        double a;
+//        double b;
+//        double c;
+//
+//        System.out.print("Enter the length of side A:" );
+//        a = scanner.nextDouble();
+//
+//        System.out.print("Enter the length of side B:" );
+//        b = scanner.nextDouble();
+//
+//        c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+//
+//        System.out.println("The Hypotenuse (side c) is: " + c);
+//        scanner.close();
+
+
+//        Scanner scanner = new Scanner(System.in);
+//
+//        double radius;
+//        double circumference;
+//        double area;
+//        double volume;
+//        System.out.print("Enter the radius: ");
+//        radius = scanner.nextDouble();
+//
+//        // c = 2 π r
+//        circumference = 2 * Math.PI * radius;
+//        //a = π r²
+//        area = Math.PI * Math.pow(radius,2);
+//        //v = 4/3 π r³
+//        volume = (4.0 / 3.0) * Math.PI * Math.pow(radius,3);
+//
+//
+//        System.out.printf("The circumference is: %.1fcm\n" , circumference);
+//        System.out.printf("The area is: %.1fcm²\n" , area );
+//        System.out.printf("The volume is: %.1fcm³\n" , volume);
+//
+//
+//        scanner.close();
+
+        String name = "Spongebob";
+        char firstLetter = 'S';
+        int age = 30;
+        double height = 60.5;
+        boolean isEmployed = true;
+
+        System.out.printf("Hello %s\n", name);
+        System.out.printf("Your name starts with a %c\n", firstLetter);
+        System.out.printf("You are %d years old\n",age);
+        System.out.printf("You are %f inches tall\n",height);
+        System.out.printf("Employed: %b\n",isEmployed);
+        System.out.printf("%s is %d years old",name, age);
     }
 }
