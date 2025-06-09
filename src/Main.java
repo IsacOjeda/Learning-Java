@@ -122,17 +122,63 @@ public class Main {
 //
 //        scanner.close();
 
-        String name = "Spongebob";
-        char firstLetter = 'S';
-        int age = 30;
-        double height = 60.5;
-        boolean isEmployed = true;
+//        String name = "Spongebob";
+//        char firstLetter = 'S';
+//        int age = 30;
+//        double height = 60.5;
+//        boolean isEmployed = true;
+//
+//        System.out.printf("Hello %s\n", name);
+//        System.out.printf("Your name starts with a %c\n", firstLetter);
+//        System.out.printf("You are %d years old\n",age);
+//        System.out.printf("You are %f inches tall\n",height);
+//        System.out.printf("Employed: %b\n",isEmployed);
+//        System.out.printf("%s is %d years old",name, age);
 
-        System.out.printf("Hello %s\n", name);
-        System.out.printf("Your name starts with a %c\n", firstLetter);
-        System.out.printf("You are %d years old\n",age);
-        System.out.printf("You are %f inches tall\n",height);
-        System.out.printf("Employed: %b\n",isEmployed);
-        System.out.printf("%s is %d years old",name, age);
+//        double price1 = 9000.99;
+//        double price2 = 100000.15;
+//        double price3 = -54000.01;
+//
+//        System.out.printf("%+.2f\n",price1);
+//        System.out.printf("%,.2f\n",price2);
+//        System.out.printf("%, .2f\n",price3);
+
+//        int id1 = 1;
+//        int id2 = 24;
+//        int id3 = 345;
+//        int id4 = 2356;
+//
+//        System.out.printf("%-4d\n",id1);
+//        System.out.printf("%4d\n",id2);
+//        System.out.printf("%04d\n",id3);
+//        System.out.printf("%4d\n",id4);
+
+
+        boolean isStudent = false;
+        boolean isSenior = true;
+        double price = 9.99;
+
+        if(isStudent){
+            if(isSenior){
+                System.out.println("You get a senior discount of 20%");
+                System.out.println("You get a student discount of 10%");
+                price *= 0.7;
+            }
+            else {
+                System.out.println("You get a student discount of 10%");
+                price *= 0.9;
+            }
+        }
+        else{
+            if(isSenior){
+                System.out.println("You get a senior discount of 20%");
+                price *= 0.8;
+            }else{
+                price *= 1;
+            }
+        }
+        System.out.printf("The price of a ticket is: $%.2f",price);
+
+
     }
 }
