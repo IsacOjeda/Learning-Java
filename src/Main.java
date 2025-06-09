@@ -16,9 +16,10 @@ public class Main {
 //        int age = 30;
 //        double price = 19.99;
 //        double gpa = 3.5;
+//        String name = "Bobby";
 //        double temperature = -12.5;
 //        char letter = 'a';
-//        boolean inSeason = false;
+//        boolean inSeason = true;
 //        String rig = "Texas rig";
 //        String bait = "Craw";
 //        String fish = " Largemouth Bass";
@@ -65,8 +66,6 @@ public class Main {
 //
 //        int gamba;
 //        gamba = random.nextInt(1,21);
-
-
 
 
 //    double result;
@@ -154,31 +153,64 @@ public class Main {
 //        System.out.printf("%4d\n",id4);
 
 
-        boolean isStudent = false;
-        boolean isSenior = true;
-        double price = 9.99;
+//        boolean isStudent = false;
+//        boolean isSenior = true;
+//        double price = 9.99;
+//
+//        if(isStudent){
+//            if(isSenior){
+//                System.out.println("You get a senior discount of 20%");
+//                System.out.println("You get a student discount of 10%");
+//                price *= 0.7;
+//            }
+//            else {
+//                System.out.println("You get a student discount of 10%");
+//                price *= 0.9;
+//            }
+//        }
+//        else{
+//            if(isSenior){
+//                System.out.println("You get a senior discount of 20%");
+//                price *= 0.8;
+//            }else{
+//                price *= 1;
+//            }
+//        }
+//        System.out.printf("The price of a ticket is: $%.2f",price);
+//
+//
 
-        if(isStudent){
-            if(isSenior){
-                System.out.println("You get a senior discount of 20%");
-                System.out.println("You get a student discount of 10%");
-                price *= 0.7;
-            }
-            else {
-                System.out.println("You get a student discount of 10%");
-                price *= 0.9;
-            }
+        String name = "Isac";
+//        int length = name.length();
+//        char letter = name.charAt(2);
+//        int index = name.indexOf("c");
+//        int lastIndex = name.lastIndexOf("a");
+//        name = name.toUpperCase();
+//        name = name.toLowerCase();
+//        name = name.trim();
+//        name = name.replace("a","i");
+
+//        if(name.isEmpty()){
+//            System.out.println("Your name is empty");
+//        }else{
+//            System.out.println("Your name is: " + name);
+//        }
+
+//        if(name.contains(" ")){
+//            System.out.println("Your name has a space in it");
+//        }
+//        else{
+//            System.out.println("Your name DOESNT have a space in it");
+//        }
+//
+//        System.out.println(name);
+
+        if(name.equalsIgnoreCase("password")){
+            System.out.println("Your name cant be password");
         }
         else{
-            if(isSenior){
-                System.out.println("You get a senior discount of 20%");
-                price *= 0.8;
-            }else{
-                price *= 1;
-            }
+            System.out.println("Hello "+ name);
         }
-        System.out.printf("The price of a ticket is: $%.2f",price);
-
 
     }
 }
