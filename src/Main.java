@@ -204,13 +204,38 @@ public class Main {
 //        }
 //
 //        System.out.println(name);
+//
+//        if(name.equalsIgnoreCase("password")){
+//            System.out.println("Your name cant be password");
+//        }
+//        else{
+//            System.out.println("Hello "+ name);
+//        }
 
-        if(name.equalsIgnoreCase("password")){
-            System.out.println("Your name cant be password");
+
+        //.substring(start, end)
+        Scanner scanner = new Scanner(System.in);
+        String email;
+        String username;
+        String domain;
+        System.out.print("Enter your email");
+
+        email = scanner.nextLine();
+        if(email.contains("@")){
+            username = email.substring(0,email.indexOf("@"));
+            domain = email.substring(email.indexOf("@"));
+            System.out.println(username);
+            System.out.println(domain);
         }
         else{
-            System.out.println("Hello "+ name);
+            System.out.println("Email must contain  @");
         }
 
+//        String username = email.substring(0,4);
+//        String domain = email.substring(4,14); // or could do (4)  and will do all the characters after until the end.
+
+
+
+    scanner.close();
     }
 }
