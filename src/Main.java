@@ -214,28 +214,50 @@ public class Main {
 
 
         //.substring(start, end)
-        Scanner scanner = new Scanner(System.in);
-        String email;
-        String username;
-        String domain;
-        System.out.print("Enter your email");
-
-        email = scanner.nextLine();
-        if(email.contains("@")){
-            username = email.substring(0,email.indexOf("@"));
-            domain = email.substring(email.indexOf("@"));
-            System.out.println(username);
-            System.out.println(domain);
-        }
-        else{
-            System.out.println("Email must contain  @");
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        String email;
+//        String username;
+//        String domain;
+//        System.out.print("Enter your email");
+//
+//        email = scanner.nextLine();
+//        if(email.contains("@")){
+//            username = email.substring(0,email.indexOf("@"));
+//            domain = email.substring(email.indexOf("@"));
+//            System.out.println(username);
+//            System.out.println(domain);
+//        }
+//        else{
+//            System.out.println("Email must contain  @");
+//        }
 
 //        String username = email.substring(0,4);
 //        String domain = email.substring(4,14); // or could do (4)  and will do all the characters after until the end.
 
+        //ternary operator ? = return 1 of 2 values if a condition is true
+
+        //variable = (condition) ? ifTrue : ifFalse;
+
+//        int score = 80;
+//        if(score >= 60){
+//            System.out.println("Pass");
+//        }
+//        else{
+//            System.out.println("FAIL");
+//        }
+//        String passOrFail = (score >= 60 )? "PASS" : "FAIL";
+//        int number = 20;
+
+//        String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
+
+//        int hours = 15;
+//        String timeOfDay = (hours < 12) ? "A.M." : "P.M.";
+
+        int income = 90000;
+        double taxRate = (income >= 40000)? 0.25 : 0.15;
 
 
-    scanner.close();
+        System.out.println(taxRate);
+
     }
 }
