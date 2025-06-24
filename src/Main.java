@@ -253,11 +253,33 @@ public class Main {
 //        int hours = 15;
 //        String timeOfDay = (hours < 12) ? "A.M." : "P.M.";
 
-        int income = 90000;
-        double taxRate = (income >= 40000)? 0.25 : 0.15;
+//        int income = 90000;
+//        double taxRate = (income >= 40000)? 0.25 : 0.15;
+//
+//
+//        System.out.println(taxRate);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the day of the week: ");
+        String day = scanner.nextLine();
+
+        switch(day){
+//            case "Monday" -> System.out.println("Its a weekday :(");
+//            case "Tuesday" -> System.out.println("Its a weekday :(");
+//            case "Wednesday" -> System.out.println("Its a weekday :(");
+//            case "Thurdsday" -> System.out.println("Its a weekday :(");
+//            case "Friday" -> System.out.println("Its a weekday :(");
+//            case "Saturday" -> System.out.println("Its the weekend! :(");
+//            case "Sunday" -> System.out.println("Its the weekend! :(");
+            case "Monday", "Tuesday","Wednesday","Thursday", "Friday" -> System.out.println("Its a weekday :(");
+            case "Saturday", "Sunday" -> System.out.println("Its the weekend!");
+            default -> System.out.println(" Is not a day");
 
 
-        System.out.println(taxRate);
+        }
+
+
+
 
     }
 }
