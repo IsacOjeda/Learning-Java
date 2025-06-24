@@ -152,7 +152,7 @@ public class Main {
 //        System.out.printf("%04d\n",id3);
 //        System.out.printf("%4d\n",id4);
 
-
+//----------------If Statements------------------------------------------------
 //        boolean isStudent = false;
 //        boolean isSenior = true;
 //        double price = 9.99;
@@ -179,8 +179,8 @@ public class Main {
 //        System.out.printf("The price of a ticket is: $%.2f",price);
 //
 //
-
-        String name = "Isac";
+ //-----------------String Methods-----------------------------------
+//        String name = "Isac";
 //        int length = name.length();
 //        char letter = name.charAt(2);
 //        int index = name.indexOf("c");
@@ -212,7 +212,7 @@ public class Main {
 //            System.out.println("Hello "+ name);
 //        }
 
-
+//--------------Substrings---------------------------------
         //.substring(start, end)
 //        Scanner scanner = new Scanner(System.in);
 //        String email;
@@ -234,49 +234,71 @@ public class Main {
 //        String domain = email.substring(4,14); // or could do (4)  and will do all the characters after until the end.
 
 //    scanner.close();
+//----------------------Enhanced Switches------------------------------------------------------
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a day of the week: ");
+        String day = scanner.nextLine();
+
+        switch(day){
+//            case "Monday" -> System.out.println("Its a weekday");
+//            case "Tuesday" -> System.out.println("Its a weekday");
+//            case "Wednesday" -> System.out.println("Its a weekday");
+//            case "Thursday" -> System.out.println("Its a weekday");
+//            case "Friday" -> System.out.println("Its a weekday");
+//            case "Saturday" -> System.out.println("Its the weekend!");
+//            case "Sunday" -> System.out.println("Its the weekend!");
+
+            //or
+
+            case "Monday","Tuesday","Wednesday","Thursday","Friday" -> System.out.println("Its a weekday -_-");
+            case "Saturday","Sunday" -> System.out.println("Its the weekend!");
+            default -> System.out.println("That is not a day lil bro");
+        }
+
+        scanner.close();
 
 
         //Calculator program
-        Scanner scanner = new Scanner(System.in);
-
-
-        double num1;
-        double num2;
-        char operator;
-        double result = 0;
-        boolean validOperation = true;
-
-        System.out.print("Enter the first number: ");
-        num1 = scanner.nextDouble();
-
-        System.out.println("Enter an operator (+, -, *, /, ^): ");
-        operator = scanner.next().charAt(0);
-
-        System.out.print("Enter the second number: ");
-        num2 = scanner.nextDouble();
-
-        switch(operator){
-            case '+' -> result =  num1 + num2;
-            case '-' -> result = num1 - num2;
-            case '*' -> result = num1 * num2;
-            case '/' ->{
-                if(num2 == 0){
-                    System.out.println("Cannot divide by zero!");
-                    validOperation = false;
-                }else{
-                    result = num1 / num2;
-                }
-            }
-            case '^' -> result = Math.pow(num1,num2);
-            default -> {
-                System.out.println("Invalid operator -_-");
-                validOperation = false;
-            }
-    }
-            if(validOperation){
-                System.out.println(result);
-            }
-            scanner.close();
+//        Scanner scanner = new Scanner(System.in);
+//
+//
+//        double num1;
+//        double num2;
+//        char operator;
+//        double result = 0;
+//        boolean validOperation = true;
+//
+//        System.out.print("Enter the first number: ");
+//        num1 = scanner.nextDouble();
+//
+//        System.out.println("Enter an operator (+, -, *, /, ^): ");
+//        operator = scanner.next().charAt(0);
+//
+//        System.out.print("Enter the second number: ");
+//        num2 = scanner.nextDouble();
+//
+//        switch(operator){
+//            case '+' -> result =  num1 + num2;
+//            case '-' -> result = num1 - num2;
+//            case '*' -> result = num1 * num2;
+//            case '/' ->{
+//                if(num2 == 0){
+//                    System.out.println("Cannot divide by zero!");
+//                    validOperation = false;
+//                }else{
+//                    result = num1 / num2;
+//                }
+//            }
+//            case '^' -> result = Math.pow(num1,num2);
+//            default -> {
+//                System.out.println("Invalid operator -_-");
+//                validOperation = false;
+//            }
+//    }
+//            if(validOperation){
+//                System.out.println(result);
+//            }
+//            scanner.close();
 
 
     }
