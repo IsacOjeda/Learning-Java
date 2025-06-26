@@ -235,11 +235,11 @@ public class Main {
 
 //    scanner.close();
 //----------------------Enhanced Switches------------------------------------------------------
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a day of the week: ");
-        String day = scanner.nextLine();
-
-        switch(day){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter a day of the week: ");
+//        String day = scanner.nextLine();
+//
+//        switch(day){
 //            case "Monday" -> System.out.println("Its a weekday");
 //            case "Tuesday" -> System.out.println("Its a weekday");
 //            case "Wednesday" -> System.out.println("Its a weekday");
@@ -250,15 +250,14 @@ public class Main {
 
             //or
 
-            case "Monday","Tuesday","Wednesday","Thursday","Friday" -> System.out.println("Its a weekday -_-");
-            case "Saturday","Sunday" -> System.out.println("Its the weekend!");
-            default -> System.out.println("That is not a day lil bro");
-        }
+//            case "Monday","Tuesday","Wednesday","Thursday","Friday" -> System.out.println("Its a weekday -_-");
+//            case "Saturday","Sunday" -> System.out.println("Its the weekend!");
+//            default -> System.out.println("That is not a day lil bro");
+//        }
+//
+//        scanner.close();
 
-        scanner.close();
-
-
-        //Calculator program
+//----------------------Calculator program---------------------------------------
 //        Scanner scanner = new Scanner(System.in);
 //
 //
@@ -299,6 +298,28 @@ public class Main {
 //                System.out.println(result);
 //            }
 //            scanner.close();
+
+//--------------Logical Operators-------------------------------
+//      && = AND
+//      || = OR
+//      ! = NOT
+
+        double temp = -10;
+        boolean isSunny = true;
+
+        if(temp <= 30 && temp >= 0 && isSunny){
+            System.out.println("The weather is GOOD");
+            System.out.println("It is SUNNY outside");
+        }
+        else if(temp <= 30 && temp >= 0 && !isSunny){
+            System.out.println("The weather is GOOD");
+            System.out.println("It is CLOUDY outside");
+        }
+        else if(temp > 30 || temp < 0){
+            System.out.println("The weather is BAD");
+
+        }
+
 
 
     }
