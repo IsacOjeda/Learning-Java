@@ -304,21 +304,37 @@ public class Main {
 //      || = OR
 //      ! = NOT
 
-        double temp = -10;
-        boolean isSunny = true;
+//        double temp = -10;
+//        boolean isSunny = true;
+//
+//        if(temp <= 30 && temp >= 0 && isSunny){
+//            System.out.println("The weather is GOOD");
+//            System.out.println("It is SUNNY outside");
+//        }
+//        else if(temp <= 30 && temp >= 0 && !isSunny){
+//            System.out.println("The weather is GOOD");
+//            System.out.println("It is CLOUDY outside");
+//        }
+//        else if(temp > 30 || temp < 0){
+//            System.out.println("The weather is BAD");
+//
+//        }
 
-        if(temp <= 30 && temp >= 0 && isSunny){
-            System.out.println("The weather is GOOD");
-            System.out.println("It is SUNNY outside");
-        }
-        else if(temp <= 30 && temp >= 0 && !isSunny){
-            System.out.println("The weather is GOOD");
-            System.out.println("It is CLOUDY outside");
-        }
-        else if(temp > 30 || temp < 0){
-            System.out.println("The weather is BAD");
+//-----------while loop----------------
+        //repeat some code forever while some condition remains true
 
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        String name = "";
+//
+//        while(name.isEmpty()){
+//            System.out.println("Enter your name: ");
+//            name = scanner.nextLine();
+//        }
+//
+//        System.out.println("Hello " + name);
+//        scanner.close();
+
+
 
 
 
